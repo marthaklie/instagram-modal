@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dbabd3f583.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!– Barra Superior con modal // –>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create new post</button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new
+                                                        post
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="message-text"
+                                                                class="col-form-label">Caption:</label>
+                                                            <textarea class="form-control" id="message-text"
+                                                                placeholder="Add the caption"> </textarea>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <i class="fa solid fa-camera border p-1"></i>
+                                                            <i class="fa-solid fa-location-dot border p-1"></i>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-success">Publish</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="btn btn-success">Create a new post
+                                        </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-gear" style="color: #f9fafb;"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                                    <li><a class="dropdown-item link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                            href="#">Log out</li></a>
+                                </ul>
+                    </div>
+                </div>
+            </nav>
+            <div <!– Contenedor 3 y 1 imágenes por fila // –>
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">
+                            <i class="fa-solid fa-table-cells"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="true"><i class="fa-solid fa-square"></i></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post1.jpg" class="card-img-top" alt="post1">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post2.png" class="card-img-top" alt="post2">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post3.jpg" class="card-img-top" alt="post3">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post4.jpg" class="card-img-top" alt="post1">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post5.jpg" class="card-img-top" alt="post2">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post6.png" class="card-img-top" alt="post3">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post7.png" class="card-img-top" alt="post3">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post8.jpg" class="card-img-top" alt="post1">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="post9.jpg" class="card-img-top" alt="post2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 30rem">
+                                <div class="container2">
+                                    <div class="row">
+                                        <div class="col-10 align-self-start fs-5 ">Promoción 6 sesiones de
+                                            corporal
+                                        </div>
+                                        <div class="col-2 align-self-end">08/26</div>
+                                    </div>
+                                </div>
+                                <img src="post1.jpg" class="card-img-top" alt="post1.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">204 Likes</p>
+                                    <p class="card-text">This is an example of a very good photo that you can post on
+                                        instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 30rem">
+                                <div class="container2">
+                                    <div class="row">
+                                        <div class="col-10 align-self-start fs-5 ">Financia tus tratamientos con Pepper
+                                        </div>
+                                        <div class="col-2 align-self-end">08/26</div>
+                                    </div>
+                                </div>
+                                <img src="post2.png" class="card-img-top" alt="post2.png">
+                                <div class="card-body">
+                                    <p class="card-text">26985 Likes</p>
+                                    <p class="card-text">This is an example of a very good photo that you can post on
+                                        instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 30rem">
+                                <div class="container2">
+                                    <div class="row">
+                                        <div class="col-10 align-self-start fs-5 ">Especial Semana del Colageno
+                                        </div>
+                                        <div class="col-2 align-self-end">08/26</div>
+                                    </div>
+                                </div>
+                                <img src="post3.jpg" class="card-img-top" alt="post3.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">204 Likes</p>
+                                    <p class="card-text">This is an example of a very good photo that you can post
+                                        on
+                                        instagram
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                    crossorigin="anonymous"></script>
+</body>
+</html>
